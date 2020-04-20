@@ -63,3 +63,46 @@ div.menu-open{
     transition: .5s;
 }
 
+@media screen and (min-width: 940px){
+    div.icon-mobile{
+        display: none;
+    }
+
+    div.menu-open, div.menu-close{
+        // @include flex-center;
+        // height: 20vh;
+        // right: 0;
+        // left: 0;
+        // width: 100vw;
+        display: flex;
+        transform: none;
+        height: 10vh;
+        width: 100vw;
+
+        & nav{
+            display: flex;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            
+            & ul{
+                @include flex-center;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+
+
+                & li{
+                    @include flex-center;
+                    height: 100%;
+
+                    & a{
+                        @include flex-center;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
