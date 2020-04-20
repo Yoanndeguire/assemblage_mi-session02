@@ -28,10 +28,15 @@ header{
 
 @media screen and (min-width:940px){
     header{
-        height: 80vh;
+        height: 60vh;
 
         & section.titre{
             margin: 10em auto;
+
+            & h1{
+                font-size: 3rem;
+                font-weight: 200;
+            }
         }
     }
 }

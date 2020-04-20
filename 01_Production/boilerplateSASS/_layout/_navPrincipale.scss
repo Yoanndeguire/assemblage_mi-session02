@@ -72,7 +72,7 @@ div.menu-open{
 
         display: flex;
         transform: none;
-        height: 10vh;
+        height: 6vh;
         width: 100vw;
 
         & nav{
@@ -96,6 +96,10 @@ div.menu-open{
                     & a{
                         @include flex-center;
                         height: 100%;
+                    }
+
+                    & a#focus{
+                        background-color: var(--rouge);
                     }
                 }
             }

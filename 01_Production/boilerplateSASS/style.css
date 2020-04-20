@@ -77,10 +77,14 @@ header section.titre h1 strong {
 
 @media screen and (min-width: 940px) {
   header {
-    height: 80vh;
+    height: 60vh;
   }
   header section.titre {
     margin: 10em auto;
+  }
+  header section.titre h1 {
+    font-size: 3rem;
+    font-weight: 200;
   }
 }
 
@@ -272,7 +276,7 @@ div.menu-close {
     display: flex;
     -webkit-transform: none;
             transform: none;
-    height: 10vh;
+    height: 6vh;
     width: 100vw;
   }
   div.menu-open nav, div.menu-close nav {
@@ -324,6 +328,9 @@ div.menu-close {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
+  }
+  div.menu-open nav ul li a#focus, div.menu-close nav ul li a#focus {
+    background-color: var(--rouge);
   }
 }
 
@@ -477,6 +484,15 @@ main article.principal figure figcaption {
   }
   main article.principal p {
     width: 70vw;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  div.header {
+    margin: 2rem 0 0 0;
+  }
+  div.header p {
+    margin: 0 auto 0 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
