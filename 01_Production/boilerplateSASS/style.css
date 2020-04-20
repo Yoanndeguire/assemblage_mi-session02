@@ -527,29 +527,52 @@ main article.principal figure figcaption {
     left: 2rem;
   }
   main article.principal h2, main article.principal p.arianne {
-    width: 45vw;
+    width: 45%;
     margin-left: auto;
     text-align: left;
   }
   main article.principal h3 {
     font-size: 2rem;
-    width: 70vw;
+    width: 70%;
   }
   main article.principal p.italique {
     margin-top: 9em;
-    width: 85vw;
+    width: 85%;
   }
   main article.principal p {
-    width: 70vw;
+    width: 70%;
   }
 }
 
 @media screen and (min-width: 940px) {
-  div.header {
-    margin: 2rem 0 0 0;
+  main {
+    position: relative;
+    padding: 2rem 0 0 0;
   }
-  div.header p {
+  main div.header {
+    top: 2rem;
+  }
+  main div.header p {
     margin: 0 auto 0 1rem;
+  }
+  main aside {
+    width: 28%;
+    height: 100%;
+  }
+  main article.principal {
+    width: 70%;
+    margin: 0 0 0 auto;
+  }
+  main article.principal h2 {
+    margin: auto;
+    width: 80%;
+  }
+  main article.principal p.arianne {
+    width: 80%;
+    margin: 0;
+  }
+  main article.principal p.italique {
+    margin: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -82,23 +82,23 @@ main{
     }
     & article.principal{
         & h2, p.arianne{
-            width: 45vw;
+            width: 45%;
             margin-left: auto;
             text-align: left;
         }
     
         & h3{
             font-size:2rem;
-            width: 70vw;
+            width: 70%;
         }
 
         & p.italique{
             margin-top: 9em;
-            width: 85vw;
+            width: 85%;
         }
 
         & p{
-            width: 70vw;
+            width: 70%;
         }
 
     }
@@ -107,10 +107,34 @@ main{
 }
 
 @media screen and (min-width: 940px){
-    div.header{
-        margin: 2rem 0 0 0;
-        & p{
-            margin: 0 auto 0 1rem;
+    
+    main{
+        position: relative;
+        padding: 2rem 0 0 0;
+        & div.header{
+            top: 2rem;
+            & p{
+                margin: 0 auto 0 1rem;
+            }
+        }
+        & aside{
+            width: 28%;
+            height: 100%;
+        }
+        & article.principal{
+            width: 70%;
+            margin: 0 0 0 auto;
+            & h2 {
+                margin: auto;
+                width: 80%;
+            }
+            & p.arianne{
+                width: 80%;
+                margin: 0;
+            }
+            & p.italique{
+                margin: 2rem;
+            }
         }
     }
 }
