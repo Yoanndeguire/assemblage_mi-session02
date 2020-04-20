@@ -533,14 +533,14 @@ main article.principal figure figcaption {
   }
   main article.principal h3 {
     font-size: 2rem;
-    width: 70%;
+    width: 80%;
   }
   main article.principal p.italique {
     margin-top: 9em;
-    width: 85%;
+    width: 70%;
   }
   main article.principal p {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -564,11 +564,9 @@ main article.principal figure figcaption {
     margin: 0 0 0 auto;
   }
   main article.principal h2 {
-    margin: auto;
-    width: 80%;
+    margin: 3rem auto 0 auto;
   }
   main article.principal p.arianne {
-    width: 80%;
     margin: 0;
   }
   main article.principal p.italique {
