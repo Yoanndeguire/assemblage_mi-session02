@@ -37,3 +37,24 @@ section.liste{
         box-shadow: .4em .4em .6em var(--ombre2);
     }
 }
+
+@media screen and (min-width: 800px){
+    & article.recette{
+        position: relative;
+        & img{
+            margin:0 auto 0 1em;
+            
+        }
+        & h4{ 
+            position: absolute;
+            top: 1em;
+            left: 40%;
+        }
+
+        & a{
+            position: absolute;
+            top: 10em;
+            left: 40%;
+        }
+    }
+}
