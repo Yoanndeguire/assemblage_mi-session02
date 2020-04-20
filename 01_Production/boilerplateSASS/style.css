@@ -194,6 +194,10 @@ section.liste article.recette-selection {
 }
 
 @media screen and (min-width: 940px) {
+  section.liste {
+    width: 70%;
+    position: relative;
+  }
   section.liste article.recette, section.liste article.recette-selection {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -204,7 +208,7 @@ section.liste article.recette-selection {
   }
   section.liste article.recette:after, section.liste article.recette-selection:after {
     content: '';
-    width: 20vw;
+    width: 20%;
     height: 2px;
     background-color: var(--gris);
   }
@@ -212,24 +216,12 @@ section.liste article.recette-selection {
     position: absolute;
     left: 10%;
   }
-  section.liste article.recette h4, section.liste article.recette-selection h4 {
+  section.liste article.recette h4, section.liste article.recette a, section.liste article.recette p, section.liste article.recette-selection h4, section.liste article.recette-selection a, section.liste article.recette-selection p {
     position: relative;
     top: 0;
     left: 0;
-    width: 40vw;
-    margin: 0 0 0 25rem;
-  }
-  section.liste article.recette a, section.liste article.recette-selection a {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 40vw;
-    margin: 0 0 5rem 25rem;
-  }
-  section.liste article.recette p, section.liste article.recette-selection p {
-    position: relative;
-    width: 40vw;
-    margin: 1rem 0 1rem 25rem;
+    width: 40%;
+    margin: 0 0 0 80%;
   }
 }
 
