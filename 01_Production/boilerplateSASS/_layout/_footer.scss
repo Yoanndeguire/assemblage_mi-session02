@@ -8,3 +8,14 @@ footer{
         margin: 1em 0;
     }
 }
+
+
+@media screen and (min-width: 940px){
+    footer{
+        @include flex-center;
+
+        & p{
+            margin: .4em;
+        }
+    }
+}
