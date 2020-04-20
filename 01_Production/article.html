@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="interface">
-        <header>
+        <header class="header">
             <div class="icon-mobile">
                 <img src="source/_photos/bar-menu.svg" alt="">
                 <img src="source/_photos/bar-menu.svg" alt="">
@@ -37,7 +37,7 @@
             </div>
             <aside class="pub-desktop">
                 <img src="source/_photos/yoann-320.jpg" alt="photo profil" class="auteur">
-                <p>Yoann Deguire</p>
+                <p><strong>Yoann</strong><br>Deguire</p>
                 <img src="" alt="" class="pub">
                 <img src="" alt="" class="pub">
             </aside>
@@ -59,7 +59,7 @@
                 <p>Morbi neque ante, porttitor at nisi eu, hendrerit venenatis sapien. Suspendisse potenti. Etiam volutpat facilisis leo ac facilisis. Praesent sit amet odio in nunc eleifend cursus gravida sit amet libero.</p>
                 <p>Integer eu convallis eros, eget viverra justo. Phasellus sagittis in nisi quis vulputate. Phasellus semper erat hendrerit porttitor cursus. Mauris eget arcu dapibus, rhoncus nulla vel, malesuada turpis. Nam congue convallis eros non luctus. Etiam suscipit malesuada risus, nec semper massa aliquet at. Ut venenatis consequat dapibus.</p>
             </article>
-            <section>
+            <section class="liste">
                 <article class="recette">
                     <source media="(min-width: 1260px)" srcset="source/_photos/crevette-400.jpg">
                     <img src="source/_photos/crevette-255.jpg" alt="bolle de crevette">                    <div class="info"></div>
@@ -95,9 +95,14 @@
         $(function(){
 
             $(".icon-mobile").click(function(){
-                $(".icon-mobile").toggleClass("icon-close");
+                $(this).toggleClass("icon-close");
                 $(".menu-open").toggleClass("menu-close");
             });
+
+            $(".recette").click(function(){
+                $(this).toggleClass("recette-selection");
+            });
+
 
 
         });

@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image:url("../source/_photos/entete.jpg");
+    background-position: center;
+    background-size: cover;
+    
+    & section.titre{
+        @include flex-center;
+        margin: 15em auto;
+        color: var(--blanc);
+        border: 3px solid var(--blanc);
+  
+        & h1{
+            font-size: 2em;
+            font-weight: 400;
+            margin: 1rem;
+
+            & strong{
+                font-family: 'Courgette', cursive;      
+                font-size: inherit;
+              }
+        }
+    }
+
+}

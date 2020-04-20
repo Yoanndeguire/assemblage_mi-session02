@@ -1,0 +1,69 @@
+main{
+
+    align-items: center;
+
+    & div.header{
+        @include flex-center;
+        color: var(--blanc);
+        background-color: var(--vert);
+        & p{
+            font-size: 1.3rem;
+        }
+    }
+
+    & aside.pub-desktop{
+        @include flex-center;
+        flex-direction: column;
+        text-align: center;
+        & p{
+            color: var(--gris);
+            & strong{
+                color: var(--foncee);
+                font-size: 1.3rem;
+                font-weight: 900;
+            }
+        }
+    }
+
+    & article.principal{
+        @include flex-center;
+        flex-direction: column;
+        margin-top: 2em;
+        text-align: center;
+        & h2{
+            letter-spacing: 5px;
+            font-size: 3rem;
+            font-weight: 200;
+        }
+        & h3{
+            margin: 1em 0 .5em 0;
+            width: 80vw;
+            color: var(--rouge);
+            font-size: 1.5rem;
+            align-items: center;
+            text-justify: center;
+        }
+        & p.arianne{
+            color: var(--gris);
+            font-size: 1.2rem;
+        }
+        & p.italique{
+            font-style: italic;
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+        & p{
+            margin: 1em;
+        }
+        & figure{
+            @include flex-center;
+            flex-direction: column;
+            & figcaption{
+                margin-right: auto;
+                color: var(--gris);
+                font-size: .5rem;
+                font-weight: 200;
+            }
+        }
+    }
+}
