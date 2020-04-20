@@ -69,11 +69,7 @@ div.menu-open{
     }
 
     div.menu-open, div.menu-close{
-        // @include flex-center;
-        // height: 20vh;
-        // right: 0;
-        // left: 0;
-        // width: 100vw;
+
         display: flex;
         transform: none;
         height: 10vh;
