@@ -29,19 +29,22 @@ main{
         @include flex-center;
         flex-direction: column;
         margin-top: 2em;
-        text-align: center;
+        text-justify: center;
+        
         & h2{
             letter-spacing: 5px;
             font-size: 3rem;
             font-weight: 200;
+            text-align: center;
         }
         & h3{
             margin: 1em 0 .5em 0;
             width: 80vw;
             color: var(--rouge);
             font-size: 1.5rem;
+            text-justify:none ;
             align-items: center;
-            text-justify: center;
+            font-weight: 400;
         }
         & p.arianne{
             color: var(--gris);
@@ -66,4 +69,39 @@ main{
             }
         }
     }
+}
+
+@media screen and (min-width: 800px){
+
+main{
+  position: relative;
+    & aside{
+        position: absolute;
+        top: 4rem;
+        left: 2rem;
+    }
+    & article.principal{
+        & h2, p.arianne{
+            width: 50vw;
+            margin-left: auto;
+            text-align: left;
+        }
+    
+        & h3{
+            font-size:2rem;
+            width: 70vw;
+        }
+
+        & p.italique{
+            margin-top: 8em;
+            width: 85vw;
+        }
+
+        & p{
+            width: 70vw;
+        }
+
+    }
+}
+
 }
