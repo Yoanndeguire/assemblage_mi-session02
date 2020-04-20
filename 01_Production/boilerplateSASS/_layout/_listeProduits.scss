@@ -39,22 +39,69 @@ section.liste{
 }
 
 @media screen and (min-width: 700px){
-    & article.recette{
+    article.recette{
         position: relative;
         & img{
             margin:0 auto 0 1em;
-            
+
         }
         & h4{ 
             position: absolute;
             top: 1em;
             left: 45%;
-        }
-
+        }   
         & a{
             position: absolute;
             top: 10em;
             left: 45%;
         }
+
     }
+}
+
+@media screen and (min-width:940px){
+    section.liste{
+        & article.recette, article.recette-selection{
+            box-shadow: none;
+            height: 35vh;
+            width: 80%;
+            margin: 3em 0 0 0;
+            text-align: left;
+            &:after{
+                content: '';
+                width: 20vw;
+                height: 2px;
+                background-color: var(--gris);
+            }
+            & img{
+                position: absolute;
+                left: 10%;
+            }
+            & h4{
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 40vw;
+                margin: 0 0 0 25rem;
+                // margin: 0 1rem 0 30%;
+            }
+            & a{
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 40vw;
+                margin: 0 0 5rem 25rem;
+
+                // margin: 1rem 0 3rem 10%;
+            }
+            & p{
+                position: relative;
+                // margin: 0 1rem 0 40%;
+                width: 40vw;
+                margin: 1rem 0 1rem 25rem;
+
+            }
+        }
+    }
+
 }
