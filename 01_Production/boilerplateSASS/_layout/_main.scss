@@ -71,7 +71,7 @@ main{
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
 
 main{
   position: relative;
@@ -82,7 +82,7 @@ main{
     }
     & article.principal{
         & h2, p.arianne{
-            width: 50vw;
+            width: 45vw;
             margin-left: auto;
             text-align: left;
         }
@@ -93,7 +93,7 @@ main{
         }
 
         & p.italique{
-            margin-top: 8em;
+            margin-top: 9em;
             width: 85vw;
         }
 

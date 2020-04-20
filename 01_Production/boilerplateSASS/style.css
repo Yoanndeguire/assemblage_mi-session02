@@ -144,7 +144,7 @@ section.liste article.recette-selection {
           box-shadow: 0.4em 0.4em 0.6em var(--ombre2);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   article.recette {
     position: relative;
   }
@@ -154,12 +154,12 @@ section.liste article.recette-selection {
   article.recette h4 {
     position: absolute;
     top: 1em;
-    left: 40%;
+    left: 45%;
   }
   article.recette a {
     position: absolute;
     top: 10em;
-    left: 40%;
+    left: 45%;
   }
 }
 
@@ -379,7 +379,7 @@ main article.principal figure figcaption {
   font-weight: 200;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   main {
     position: relative;
   }
@@ -389,7 +389,7 @@ main article.principal figure figcaption {
     left: 2rem;
   }
   main article.principal h2, main article.principal p.arianne {
-    width: 50vw;
+    width: 45vw;
     margin-left: auto;
     text-align: left;
   }
@@ -398,7 +398,7 @@ main article.principal figure figcaption {
     width: 70vw;
   }
   main article.principal p.italique {
-    margin-top: 8em;
+    margin-top: 9em;
     width: 85vw;
   }
   main article.principal p {
