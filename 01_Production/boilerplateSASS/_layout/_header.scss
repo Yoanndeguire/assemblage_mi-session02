@@ -25,3 +25,13 @@ header{
     }
 
 }
+
+@media screen and (min-width:940px){
+    header{
+        height: 80vh;
+
+        & section.titre{
+            margin: 10em auto;
+        }
+    }
+}

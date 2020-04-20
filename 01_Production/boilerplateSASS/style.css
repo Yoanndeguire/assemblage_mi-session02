@@ -75,6 +75,15 @@ header section.titre h1 strong {
   font-size: inherit;
 }
 
+@media screen and (min-width: 940px) {
+  header {
+    height: 80vh;
+  }
+  header section.titre {
+    margin: 10em auto;
+  }
+}
+
 section.liste {
   display: -webkit-box;
   display: -ms-flexbox;
