@@ -1,0 +1,16 @@
+
+@mixin flex-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin hyperlien{
+    display:flex;
+    text-decoration: none;
+    color: var(--noir);
+}
+
+@mixin liste{
+    list-style-type: none;
+}
