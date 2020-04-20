@@ -377,9 +377,19 @@ div.menu-close {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
+    border-bottom: 3px solid var(--foncee);
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+  }
+  div.menu-open nav ul li a:hover, div.menu-close nav ul li a:hover {
+    border-bottom: 3px solid var(--rouge);
+  }
+  div.menu-open nav ul li a:focus, div.menu-close nav ul li a:focus {
+    border-color: var(--rouge);
   }
   div.menu-open nav ul li a#focus, div.menu-close nav ul li a#focus {
     background-color: var(--rouge);
+    border-color: var(--rouge);
   }
 }
 

@@ -96,10 +96,19 @@ div.menu-open{
                     & a{
                         @include flex-center;
                         height: 100%;
+                        border-bottom: 3px solid var(--foncee);
+                        transition: border-color .2s;
+                        &:hover{
+                            border-bottom: 3px solid var(--rouge);
+                        }
+                        &:focus{
+                            border-color: var(--rouge);
+                        }
                     }
 
                     & a#focus{
                         background-color: var(--rouge);
+                        border-color: var(--rouge);
                     }
                 }
             }
