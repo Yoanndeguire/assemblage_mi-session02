@@ -22,12 +22,12 @@ section.liste{
             margin: 1rem;
         }
         & a{
+            @include hyperlien;
+            @include flex-center;
             padding: 1rem;
             border-radius: .8rem;
             color: var(--blanc);
             background-color: var(--vert);
-            text-decoration: none;
-
             &:focus{
                 background-color: var(--rouge);
             }
