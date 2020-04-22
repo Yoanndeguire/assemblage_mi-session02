@@ -197,13 +197,15 @@ section.liste article.recette-selection {
   section.liste {
     width: 70%;
     position: relative;
+    margin: 0 1rem 0 auto;
   }
   section.liste article.recette, section.liste article.recette-selection {
     -webkit-box-shadow: none;
             box-shadow: none;
     height: 35vh;
     width: 80%;
-    margin: 3em 0 0 0;
+    margin: 5rem 0;
+    padding: 2rem 0;
     text-align: left;
   }
   section.liste article.recette:after, section.liste article.recette-selection:after {
@@ -221,7 +223,7 @@ section.liste article.recette-selection {
     top: 0;
     left: 0;
     width: 40%;
-    margin: 0 0 0 80%;
+    margin: 1rem 0 0 80%;
   }
 }
 
@@ -560,6 +562,15 @@ main article.principal figure figcaption {
   main aside {
     width: 28%;
     height: 100%;
+  }
+  main aside img.auteur {
+    margin: 2rem 0 0 0;
+  }
+  main aside p {
+    margin: 0 0 5rem 0;
+  }
+  main aside img.pub {
+    margin: auto 0;
   }
   main article.principal {
     width: 70%;

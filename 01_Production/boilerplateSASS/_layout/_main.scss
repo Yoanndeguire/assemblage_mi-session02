@@ -120,6 +120,16 @@ main{
         & aside{
             width: 28%;
             height: 100%;
+            & img.auteur{
+                margin: 2rem 0 0 0;
+            }
+            & p{
+                margin: 0 0 5rem 0;
+            }
+
+            & img.pub{
+                margin: auto 0;
+            }
         }
         & article.principal{
             width: 70%;
