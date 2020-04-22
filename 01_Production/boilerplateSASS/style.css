@@ -488,7 +488,7 @@ main aside.pub-desktop p strong {
   font-weight: 900;
 }
 
-main aside.pub-desktop div.pubs {
+main aside.pub-desktop img.pub {
   display: none;
 }
 
@@ -616,13 +616,11 @@ main article.principal figure figcaption {
     margin: 0 0 5rem 0;
   }
   main aside div.pubs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 0 0 auto 0;
   }
   main aside div.pubs img.pub {
     margin: 3em 0;
+    display: inherit;
   }
   main article.principal {
     width: 70%;

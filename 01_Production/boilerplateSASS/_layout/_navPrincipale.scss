@@ -1,3 +1,5 @@
+
+
 div.icon-mobile{
     @include flex-center;
     flex-direction: column;
@@ -22,6 +24,7 @@ div.icon-close{
         transform:rotateZ(-45deg) translateY(-.6em);
         transition: .5s;
     }
+
 }
 
 

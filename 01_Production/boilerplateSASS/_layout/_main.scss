@@ -23,7 +23,7 @@ main{
                 font-weight: 900;
             }
         }
-        & div.pubs{
+        & img.pub{
             display: none;
         }
     }
@@ -131,10 +131,10 @@ main{
             }
 
             & div.pubs{
-                display: flex;
                 margin: 0 0 auto 0;
                 & img.pub{
                     margin: 3em 0;
+                    display: inherit;
                 }
             }
         }
