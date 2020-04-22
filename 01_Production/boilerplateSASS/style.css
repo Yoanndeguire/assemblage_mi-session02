@@ -106,6 +106,12 @@ header section.titre h1 strong {
   }
 }
 
+@media screen and (min-width: 1260px) {
+  header {
+    height: 70vh;
+  }
+}
+
 @-webkit-keyframes hover {
   from {
     background-color: var(--vert);
@@ -241,7 +247,7 @@ section.liste article.recette-selection {
   section.liste article.recette:after, section.liste article.recette-selection:after {
     content: '';
     position: absolute;
-    bottom: -1rem;
+    bottom: -2rem;
     width: 50%;
     height: 2px;
     background-color: var(--grisPale);
@@ -260,12 +266,23 @@ section.liste article.recette-selection {
   section.liste article.recette a:hover, section.liste article.recette-selection a:hover {
     -webkit-animation-name: hover;
             animation-name: hover;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  article.recette, article.recette-selection {
+    margin: 5rem 0 0 0;
+    padding: 5rem 0 0 0;
+  }
+  article.recette img.item-liste, article.recette-selection img.item-liste {
+    width: 400px;
+    max-width: 400px;
   }
 }
 
@@ -371,6 +388,8 @@ div.menu-close {
             transform: none;
     height: 6vh;
     width: 100vw;
+    -webkit-transition: 0s;
+    transition: 0s;
   }
   div.menu-open nav, div.menu-close nav {
     display: -webkit-box;
@@ -639,6 +658,26 @@ main article.principal figure figcaption {
   }
   main article.principal p.italique {
     margin: 2rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  main {
+    position: relative;
+    -webkit-box-flex: inherit;
+        -ms-flex-positive: inherit;
+            flex-grow: inherit;
+    width: 1150px;
+    margin: 0 auto;
+    background-color: var(--blanc);
+    -webkit-transform: translateY(-8rem);
+            transform: translateY(-8rem);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  main #papi {
+    width: 715px;
+    max-width: 715px;
   }
 }
 /*# sourceMappingURL=style.css.map */

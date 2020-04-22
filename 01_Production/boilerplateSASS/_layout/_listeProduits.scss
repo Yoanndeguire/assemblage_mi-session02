@@ -80,7 +80,7 @@ section.liste{
             &:after{
                 content: '';
                 position: absolute;
-                bottom: -1rem;
+                bottom: -2rem;
                 width: 50%;
                 height: 2px;
                 background-color: var(--grisPale);
@@ -100,12 +100,24 @@ section.liste{
             & a{
                 &:hover{
                     animation-name: hover;
-                    animation-duration: .5s;
+                    animation-duration: .3s;
                     animation-timing-function: ease-in;
                     animation-fill-mode: forwards;
                 }
             }
      
+        }
+    }
+
+}
+
+@media screen and (min-width:1260px){
+    article.recette, article.recette-selection{
+        margin: 5rem 0 0 0;
+      padding: 5rem 0 0 0;
+        & img.item-liste{
+            width: 400px;
+            max-width: 400px;
         }
     }
 
