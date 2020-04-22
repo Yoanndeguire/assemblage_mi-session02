@@ -276,11 +276,10 @@ section.liste article.recette-selection {
 }
 
 @media screen and (min-width: 1260px) {
-  article.recette, article.recette-selection {
-    margin: 5rem 0 0 0;
-    padding: 5rem 0 0 0;
+  article.recette {
+    height: 500px;
   }
-  article.recette img.item-liste, article.recette-selection img.item-liste {
+  article.recette img.item-liste {
     width: 400px;
     max-width: 400px;
   }
@@ -610,6 +609,9 @@ main article.principal figure figcaption {
   }
   main article.principal p {
     width: 80%;
+  }
+  main article.principal figure > figcaption {
+    font-size: 1rem;
   }
 }
 

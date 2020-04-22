@@ -112,9 +112,10 @@ section.liste{
 }
 
 @media screen and (min-width:1260px){
-    article.recette, article.recette-selection{
-        margin: 5rem 0 0 0;
-      padding: 5rem 0 0 0;
+    article.recette{
+        height: 500px;
+
+      
         & img.item-liste{
             width: 400px;
             max-width: 400px;
