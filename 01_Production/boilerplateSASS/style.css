@@ -580,8 +580,11 @@ main article.principal figure figcaption {
   main aside p {
     margin: 0 0 5rem 0;
   }
-  main aside img.pub {
+  main aside div.pubs {
     margin: auto 0;
+  }
+  main aside div.pubs img.pub {
+    margin: 5em 0;
   }
   main article.principal {
     width: 70%;

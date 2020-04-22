@@ -127,8 +127,11 @@ main{
                 margin: 0 0 5rem 0;
             }
 
-            & img.pub{
+            & div.pubs{
                 margin: auto 0;
+                & img.pub{
+                    margin: 5em 0;
+                }
             }
         }
         & article.principal{
