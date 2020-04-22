@@ -1,0 +1,741 @@
+:root {
+  --rouge: #ff6c47;
+  --vert: #bac373;
+  --foncee: #222222;
+  --blanc:#fff;
+  --noir:#000;
+  --gris: rgb(114, 114, 114);
+  --grisPale: rgb(196, 196, 196);
+  --ombre: rgba(0, 0, 0, 0.274);
+  --ombre2: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+div.interface {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin: 0;
+  padding: 1rem 0;
+  color: var(--blanc);
+  background-color: var(--foncee);
+  text-align: center;
+}
+
+footer p {
+  margin: 1em 0;
+}
+
+@media screen and (min-width: 940px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer p {
+    margin: .4em;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-image: url("../source/_photos/entete.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+header section.titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15em auto;
+  color: var(--blanc);
+  border: 3px solid var(--blanc);
+}
+
+header section.titre h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 1rem;
+}
+
+header section.titre h1 strong {
+  font-family: 'Courgette', cursive;
+  font-size: inherit;
+}
+
+@media screen and (min-width: 940px) {
+  header {
+    height: 60vh;
+  }
+  header section.titre {
+    margin: 10em auto;
+  }
+  header section.titre h1 {
+    font-size: 3rem;
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  header {
+    height: 70vh;
+  }
+}
+
+@-webkit-keyframes hover {
+  from {
+    background-color: var(--vert);
+  }
+  to {
+    background-color: var(--rouge);
+  }
+}
+
+@keyframes hover {
+  from {
+    background-color: var(--vert);
+  }
+  to {
+    background-color: var(--rouge);
+  }
+}
+
+section.liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+section.liste article.recette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+  padding: 1rem 0;
+  -webkit-box-shadow: 0.2em 0.2em 0.3em var(--ombre);
+          box-shadow: 0.2em 0.2em 0.3em var(--ombre);
+  border-radius: 3px;
+  text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.liste article.recette h4 {
+  margin: 1rem;
+  color: var(--foncee);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+section.liste article.recette p {
+  margin: 1rem;
+}
+
+section.liste article.recette a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--noir);
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  border-radius: .8rem;
+  color: var(--blanc);
+  background-color: var(--vert);
+}
+
+section.liste article.recette a:focus {
+  background-color: var(--rouge);
+}
+
+section.liste article.recette-selection {
+  -webkit-box-shadow: 0.4em 0.4em 0.6em var(--ombre2);
+          box-shadow: 0.4em 0.4em 0.6em var(--ombre2);
+}
+
+@media screen and (min-width: 700px) {
+  article.recette {
+    position: relative;
+  }
+  article.recette img {
+    margin: 0 auto 0 1em;
+  }
+  article.recette h4 {
+    position: absolute;
+    top: 1em;
+    left: 45%;
+  }
+  article.recette a {
+    position: absolute;
+    top: 10em;
+    left: 45%;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  section.liste {
+    width: 70%;
+    position: relative;
+    margin: 0 1rem 2rem auto;
+  }
+  section.liste article.recette, section.liste article.recette-selection {
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 80%;
+    margin: 3rem 0 0 0;
+    padding: 2rem 0;
+    text-align: left;
+  }
+  section.liste article.recette:after, section.liste article.recette-selection:after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    width: 50%;
+    height: 2px;
+    background-color: var(--grisPale);
+  }
+  section.liste article.recette img, section.liste article.recette-selection img {
+    position: absolute;
+    left: 0;
+  }
+  section.liste article.recette h4, section.liste article.recette a, section.liste article.recette p, section.liste article.recette-selection h4, section.liste article.recette-selection a, section.liste article.recette-selection p {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40%;
+    margin: 1rem 0 0 80%;
+  }
+  section.liste article.recette a:hover, section.liste article.recette-selection a:hover {
+    -webkit-animation-name: hover;
+            animation-name: hover;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  article.recette {
+    height: 500px;
+  }
+  article.recette img.item-liste {
+    width: 400px;
+    max-width: 400px;
+  }
+}
+
+@-webkit-keyframes close {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+@keyframes close {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+@-webkit-keyframes open {
+  from {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes open {
+  from {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+div.icon-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  z-index: 101;
+  left: .5em;
+  top: .5em;
+}
+
+div.icon-mobile img {
+  position: relative;
+  padding: .3em;
+  width: 2.5rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+div.icon-close img:first-of-type {
+  -webkit-transform: rotateZ(45deg) translateY(0.6em);
+          transform: rotateZ(45deg) translateY(0.6em);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+div.icon-close img:last-of-type {
+  -webkit-transform: rotateZ(-45deg) translateY(-0.6em);
+          transform: rotateZ(-45deg) translateY(-0.6em);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+div.menu-open {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  background-color: var(--foncee);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation-name: open;
+          animation-name: open;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+div.menu-open nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+}
+
+div.menu-open nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.menu-open nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: var(--noir);
+  color: var(--blanc);
+  padding: 1em 1em;
+}
+
+div.menu-open nav ul li a:focus {
+  background-color: var(--rouge);
+}
+
+div.menu-close {
+  -webkit-animation-name: close;
+          animation-name: close;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@media screen and (min-width: 940px) {
+  div.icon-mobile {
+    display: none;
+  }
+  div.menu-open, div.menu-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: none;
+            transform: none;
+    height: 6vh;
+    width: 100vw;
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+  div.menu-open nav, div.menu-close nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  div.menu-open nav ul, div.menu-close nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  div.menu-open nav ul li, div.menu-close nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  div.menu-open nav ul li a, div.menu-close nav ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    border-bottom: 3px solid var(--foncee);
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+  }
+  div.menu-open nav ul li a:hover, div.menu-close nav ul li a:hover {
+    border-bottom: 3px solid var(--rouge);
+  }
+  div.menu-open nav ul li a:focus, div.menu-close nav ul li a:focus {
+    border-color: var(--rouge);
+  }
+  div.menu-open nav ul li a#focus, div.menu-close nav ul li a#focus {
+    background-color: var(--rouge);
+    border-color: var(--rouge);
+  }
+}
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--blanc);
+  background-color: var(--vert);
+}
+
+main div.header p {
+  font-size: 1.3rem;
+}
+
+main aside.pub-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main aside.pub-desktop p {
+  color: var(--gris);
+}
+
+main aside.pub-desktop p strong {
+  color: var(--foncee);
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+main aside.pub-desktop img.pub {
+  display: none;
+}
+
+main article.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2em;
+  text-justify: center;
+}
+
+main article.principal h2 {
+  letter-spacing: 5px;
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+main article.principal h3 {
+  margin: 1em 0 .5em 0;
+  width: 80vw;
+  color: var(--rouge);
+  font-size: 1.5rem;
+  text-justify: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+}
+
+main article.principal p.arianne {
+  color: var(--gris);
+  font-size: 1.2rem;
+}
+
+main article.principal p.italique {
+  font-style: italic;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+main article.principal p {
+  margin: 1em;
+}
+
+main article.principal figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main article.principal figure figcaption {
+  margin-right: auto;
+  color: var(--gris);
+  font-size: .5rem;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    position: relative;
+  }
+  main aside {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+  }
+  main article.principal h2, main article.principal p.arianne {
+    width: 45%;
+    margin-left: auto;
+    text-align: left;
+  }
+  main article.principal h3 {
+    font-size: 2rem;
+    width: 80%;
+  }
+  main article.principal p.italique {
+    margin-top: 9em;
+    width: 70%;
+  }
+  main article.principal p {
+    width: 80%;
+  }
+  main article.principal figure > figcaption {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  main {
+    position: relative;
+    padding: 2rem 0 0 0;
+  }
+  main div.header {
+    top: 2rem;
+  }
+  main div.header p {
+    margin: 0 auto 0 1rem;
+  }
+  main aside {
+    width: 28%;
+    height: 100%;
+  }
+  main aside img.auteur {
+    margin: 2rem 0 0 0;
+  }
+  main aside p {
+    margin: 0 0 5rem 0;
+  }
+  main aside div.pubs {
+    margin: 0 0 auto 0;
+  }
+  main aside div.pubs img.pub {
+    margin: 3em 0;
+    display: inherit;
+  }
+  main article.principal {
+    width: 70%;
+    margin: 0 0 0 auto;
+  }
+  main article.principal img.pub-mobile {
+    display: none;
+  }
+  main article.principal h2 {
+    margin: 3rem auto 0 auto;
+    width: 80%;
+  }
+  main article.principal p.arianne {
+    margin: 0;
+    width: 80%;
+  }
+  main article.principal p.italique {
+    margin: 2rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  main {
+    position: relative;
+    -webkit-box-flex: inherit;
+        -ms-flex-positive: inherit;
+            flex-grow: inherit;
+    width: 1150px;
+    margin: 0 auto;
+    background-color: var(--blanc);
+    -webkit-transform: translateY(-8rem);
+            transform: translateY(-8rem);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  main #papi {
+    width: 715px;
+    max-width: 715px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
