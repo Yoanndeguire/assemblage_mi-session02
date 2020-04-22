@@ -63,18 +63,20 @@ section.liste{
     section.liste{
         width: 70%;
         position: relative;
-        margin: 0 1rem 0 auto;
+        margin: 0 1rem 2rem auto;
 
         & article.recette, article.recette-selection{
+            position: relative;
             box-shadow: none;
-            height: 35vh;
             width: 80%;
-            margin: 5rem 0;
+            margin: 3rem 0 0 0;
             padding: 2rem 0;
             text-align: left;
             &:after{
                 content: '';
-                width: 20%;
+                position: absolute;
+                bottom: -1rem;
+                width: 50%;
                 height: 2px;
                 background-color: var(--gris);
             }

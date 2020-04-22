@@ -128,9 +128,9 @@ main{
             }
 
             & div.pubs{
-                margin: auto 0;
+                margin: 0 0 auto 0;
                 & img.pub{
-                    margin: 5em 0;
+                    margin: 3em 0;
                 }
             }
         }
@@ -139,9 +139,11 @@ main{
             margin: 0 0 0 auto;
             & h2 {
                 margin:  3rem auto 0 auto;
+                width: 80%;
             }
             & p.arianne{
                 margin: 0;
+                width: 80%;
             }
             & p.italique{
                 margin: 2rem;
