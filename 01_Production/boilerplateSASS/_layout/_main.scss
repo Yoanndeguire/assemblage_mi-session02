@@ -23,6 +23,9 @@ main{
                 font-weight: 900;
             }
         }
+        & div.pubs{
+            display: none;
+        }
     }
 
     & article.principal{
@@ -128,6 +131,7 @@ main{
             }
 
             & div.pubs{
+                display: flex;
                 margin: 0 0 auto 0;
                 & img.pub{
                     margin: 3em 0;
@@ -137,6 +141,9 @@ main{
         & article.principal{
             width: 70%;
             margin: 0 0 0 auto;
+            & img.pub-mobile{
+                display: none;
+            }
             & h2 {
                 margin:  3rem auto 0 auto;
                 width: 80%;

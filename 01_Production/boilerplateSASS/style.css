@@ -5,6 +5,7 @@
   --blanc:#fff;
   --noir:#000;
   --gris: rgb(114, 114, 114);
+  --grisPale: rgb(196, 196, 196);
   --ombre: rgba(0, 0, 0, 0.274);
   --ombre2: rgba(0, 0, 0, 0.3);
 }
@@ -225,7 +226,7 @@ section.liste article.recette-selection {
     bottom: -1rem;
     width: 50%;
     height: 2px;
-    background-color: var(--gris);
+    background-color: var(--grisPale);
   }
   section.liste article.recette img, section.liste article.recette-selection img {
     position: absolute;
@@ -459,6 +460,10 @@ main aside.pub-desktop p strong {
   font-weight: 900;
 }
 
+main aside.pub-desktop div.pubs {
+  display: none;
+}
+
 main article.principal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,6 +588,9 @@ main article.principal figure figcaption {
     margin: 0 0 5rem 0;
   }
   main aside div.pubs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0 0 auto 0;
   }
   main aside div.pubs img.pub {
@@ -591,6 +599,9 @@ main article.principal figure figcaption {
   main article.principal {
     width: 70%;
     margin: 0 0 0 auto;
+  }
+  main article.principal img.pub-mobile {
+    display: none;
   }
   main article.principal h2 {
     margin: 3rem auto 0 auto;
