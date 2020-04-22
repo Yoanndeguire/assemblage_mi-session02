@@ -1,3 +1,8 @@
+@keyframes hover{
+    from{background-color: var(--vert);}
+    to{background-color: var(--rouge);}
+}
+
 section.liste{
     @include flex-center;
     flex-direction: column;
@@ -82,7 +87,7 @@ section.liste{
             }
             & img{
                 position: absolute;
-                left: 10%;
+                left:0;
             }
             & h4, a, p{
                 position: relative;
@@ -90,6 +95,15 @@ section.liste{
                 left: 0;
                 width: 40%;
                 margin: 1rem 0 0 80%;
+            }
+
+            & a{
+                &:hover{
+                    animation-name: hover;
+                    animation-duration: .5s;
+                    animation-timing-function: ease-in;
+                    animation-fill-mode: forwards;
+                }
             }
      
         }

@@ -106,6 +106,24 @@ header section.titre h1 strong {
   }
 }
 
+@-webkit-keyframes hover {
+  from {
+    background-color: var(--vert);
+  }
+  to {
+    background-color: var(--rouge);
+  }
+}
+
+@keyframes hover {
+  from {
+    background-color: var(--vert);
+  }
+  to {
+    background-color: var(--rouge);
+  }
+}
+
 section.liste {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,7 +248,7 @@ section.liste article.recette-selection {
   }
   section.liste article.recette img, section.liste article.recette-selection img {
     position: absolute;
-    left: 10%;
+    left: 0;
   }
   section.liste article.recette h4, section.liste article.recette a, section.liste article.recette p, section.liste article.recette-selection h4, section.liste article.recette-selection a, section.liste article.recette-selection p {
     position: relative;
@@ -238,6 +256,16 @@ section.liste article.recette-selection {
     left: 0;
     width: 40%;
     margin: 1rem 0 0 80%;
+  }
+  section.liste article.recette a:hover, section.liste article.recette-selection a:hover {
+    -webkit-animation-name: hover;
+            animation-name: hover;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 }
 
