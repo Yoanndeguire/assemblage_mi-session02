@@ -84,10 +84,14 @@ main{
         left: 2rem;
     }
     & article.principal{
-        & h2, p.arianne{
+        & h2{
             width: 45%;
             margin-left: auto;
             text-align: left;
+        }
+
+        & p.arianne{
+            @extend h2;
         }
     
         & h3{
